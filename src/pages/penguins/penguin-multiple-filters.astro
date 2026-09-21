@@ -1,6 +1,6 @@
 ---
-import Layout from "../layouts/Layout.astro";
-import Header from "../components/Header.astro";
+import Layout from "../../layouts/Layout.astro";
+import Header from "../../components/Header.astro";
 ---
 
 <Layout>
@@ -74,7 +74,7 @@ import Header from "../components/Header.astro";
 
   <script>
     import * as Plot from "@observablehq/plot";
-    import penguins from "../assets/penguins.json";
+    import penguins from "../../assets/penguins.json";
 
     const selectSpecies = document.querySelector("#species-filter") as HTMLSelectElement;
     const selectIsland = document.querySelector("#island-filter") as HTMLSelectElement;

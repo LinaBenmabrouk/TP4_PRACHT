@@ -4,9 +4,22 @@
   </a>
 
   <nav class="flex flex-wrap items-center justify-end gap-4" aria-label="Navigation principale">
-    <a href="/ancres" class="hover:text-slate-600">Toutes les espèces</a>
+    <a href="/ancres" class="hover:text-slate-600">Ancres</a>
     <a href="/tabs/" class="hover:text-slate-600">Tabs</a>
     <a href="/iframe/" class="hover:text-slate-600">Iframe</a>
+    <a href="/cars/" class="hover:text-slate-600">Cars</a>
+
+    <details class="relative">
+      <summary class="flex cursor-pointer list-none items-center gap-1 hover:text-slate-600">
+        Penguins
+        <img src="/fleche_bas.svg" alt="" aria-hidden="true" class="h-3 w-3" />
+      </summary>
+      <div class="absolute right-0 z-10 mt-2 grid min-w-52 gap-2 border border-slate-200 bg-white p-3 text-sm shadow-lg">
+        <a href="/penguins/simple-penguin/" class="hover:text-slate-600">Simple Penguin</a>
+        <a href="/penguins/penguin-filter/" class="hover:text-slate-600">Filtre par espèce</a>
+        <a href="/penguins/penguin-multiple-filters/" class="hover:text-slate-600">Plusieurs filtres</a>
+      </div>
+    </details>
 
     <label for="species" class="sr-only">Choisir une espèce</label>
     <select
